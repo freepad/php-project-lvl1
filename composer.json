@@ -1,0 +1,20 @@
+{
+    "name": "damir/php-project-lvl1",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Damir\\PhpProjectLvl1\\": "src/"
+        }
+    },
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "freepad@ya.ru"
+        }
+    ],
+    "require": {}
+}

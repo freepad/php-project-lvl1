@@ -9,3 +9,4 @@
 [Demo game brain calc on asciinema.org](https://asciinema.org/a/H2iikou57HFkylnBB6l6IXsyZ)
 [Demo game brain gcd on asciinema.org](https://asciinema.org/a/fAY2HCqTBOHZR7gVcjNAj5k88)
 [Demo game brain progression on asciinema.org](https://asciinema.org/a/BNbC4MekNL8hcf8O5sbKuE8Ru)
+[Demo game brain prime on asciinema.org](https://asciinema.org/a/tc30dm2LSSQhiNUOGixi8csmI)

@@ -1,11 +1,15 @@
 prepare:
 	chmod +x bin/brain-games
+	chmod +x bin/brain-even
 
 install:
 	composer install
 
 brain-games:
 	php bin/brain-games
+
+brain-even:
+	php bin/brain-even
 
 validate:
 	composer validate

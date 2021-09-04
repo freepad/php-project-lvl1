@@ -2,6 +2,7 @@ prepare:
 	chmod +x bin/brain-games
 	chmod +x bin/brain-even
 	chmod +x bin/brain-calc
+	chmod +x bin/brain-gcd
 
 install:
 	composer install
@@ -14,6 +15,9 @@ brain-even:
 
 brain-calc:
 	php bin/brain-calc
+
+brain-gcd:
+	php bin/brain-gcd
 
 validate:
 	composer validate

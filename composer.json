@@ -2,13 +2,15 @@
     "name": "damir/php-project-lvl1",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-gcd"
     ],
     "autoload": {
         "files": [
             "src/Cli.php",
             "src/games/BrainEven.php",
             "src/games/BrainCalc.php",
+            "src/games/BrainGcd.php",
             "src/Engine.php"
         ]
     },

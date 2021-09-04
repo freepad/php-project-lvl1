@@ -2,16 +2,20 @@
 
 namespace Brain\Games\Cli;
 
-function gcd($a, $b)
+function gcd(int $a, int $b): int
 {
-    return ($a % $b) ? gcd($b, $a % $b) : $b;
+    if ($a % $b != 0) {
+        return gcd($b, $a % $b);
+    }
+
+    return $b;
 }
 
-function BrainGcd()
+function BrainGcd(): void
 {
-    $game = new Engine(
+    Engine(
         "Find the greatest common divisor of given numbers.",
-        function () {
+        function (): array {
             $number1 = rand(0, 100);
             $number2 = rand(0, 100);
             return [
@@ -20,5 +24,4 @@ function BrainGcd()
             ];
         }
     );
-    $game->run();
 }

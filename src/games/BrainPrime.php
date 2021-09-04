@@ -2,7 +2,7 @@
 
 namespace Brain\Games\Cli;
 
-function isPrime($number)
+function isPrime(int $number): bool
 {
     if ($number == 2) {
         return true;
@@ -21,17 +21,16 @@ function isPrime($number)
     return true;
 }
 
-function BrainPrime()
+function BrainPrime(): void
 {
-    $game = new Engine(
+    Engine(
         "Answer \"yes\" if given number is prime. Otherwise answer \"no\".",
-        function () {
-            $number = rand(1, 100);
+        function (): array {
+            $number = rand(2, 100);
             return [
                 "question" => $number,
                 "answer" => isPrime($number) ? "yes" : "no"
             ];
         }
     );
-    $game->run();
 }

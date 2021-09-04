@@ -2,14 +2,16 @@
 
 namespace Brain\Games\Cli;
 
-function BrainCalc()
+function BrainCalc(): void
 {
-    $game = new Engine(
+    Engine(
         "What is the result of the expression?",
-        function () {
+        function (): array {
             $number1 = rand(0, 100);
             $number2 = rand(0, 100);
             $operator = ['+', '-', '*'][rand(0, 2)];
+            $question = '';
+            $answer = '';
             switch ($operator) {
                 case '+':
                     $question = "$number1 + $number2";
@@ -29,6 +31,4 @@ function BrainCalc()
             ];
         }
     );
-
-    $game->run();
 }

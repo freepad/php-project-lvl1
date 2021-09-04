@@ -2,17 +2,16 @@
 
 namespace Brain\Games\Cli;
 
-function BrainEven()
+function BrainEven(): void
 {
-    $game = new Engine(
+    Engine(
         "Answer \"yes\" if the number is even, otherwise answer \"no\".",
-        function () {
+        function (): array {
             $number = rand(0, 100);
             return [
               "question" => $number,
-              "answer" => $number % 2 ? "no" : "yes"
+              "answer" => $number % 2 === 1 ? "no" : "yes"
             ];
         }
     );
-    $game->run();
 }

@@ -1,9 +1,12 @@
 {
-    "name": "damir/php-project-lvl1",
+    "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-calc",
+        "bin/brain-prime"
     ],
     "autoload": {
         "files": [

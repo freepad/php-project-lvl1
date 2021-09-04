@@ -4,7 +4,7 @@ namespace Brain\Games\Cli;
 
 function BrainEven()
 {
-    $game = new Engine(
+    Engine(
         "Answer \"yes\" if the number is even, otherwise answer \"no\".",
         function () {
             $number = rand(0, 100);
@@ -14,5 +14,4 @@ function BrainEven()
             ];
         }
     );
-    $game->run();
 }

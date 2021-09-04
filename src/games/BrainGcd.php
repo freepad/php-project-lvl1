@@ -9,7 +9,7 @@ function gcd($a, $b)
 
 function BrainGcd()
 {
-    $game = new Engine(
+    Engine(
         "Find the greatest common divisor of given numbers.",
         function () {
             $number1 = rand(0, 100);
@@ -20,5 +20,4 @@ function BrainGcd()
             ];
         }
     );
-    $game->run();
 }

@@ -4,7 +4,7 @@ namespace Brain\Games\Cli;
 
 function BrainProgression()
 {
-    $game = new Engine(
+    Engine(
         "What number is missing in the progression?",
         function () {
             $lengthProgression = rand(5, 10);
@@ -24,5 +24,4 @@ function BrainProgression()
             ];
         }
     );
-    $game->run();
 }

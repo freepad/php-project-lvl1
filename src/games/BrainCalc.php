@@ -4,7 +4,7 @@ namespace Brain\Games\Cli;
 
 function BrainCalc()
 {
-    $game = new Engine(
+    Engine(
         "What is the result of the expression?",
         function () {
             $number1 = rand(0, 100);
@@ -29,6 +29,4 @@ function BrainCalc()
             ];
         }
     );
-
-    $game->run();
 }

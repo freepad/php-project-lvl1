@@ -23,7 +23,7 @@ function isPrime($number)
 
 function BrainPrime()
 {
-    $game = new Engine(
+    Engine(
         "Answer \"yes\" if given number is prime. Otherwise answer \"no\".",
         function () {
             $number = rand(1, 100);
@@ -33,5 +33,4 @@ function BrainPrime()
             ];
         }
     );
-    $game->run();
 }
